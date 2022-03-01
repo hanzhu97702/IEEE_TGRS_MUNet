@@ -4,7 +4,7 @@
 
 ___________
 
-The code in this toolbox implements the "Multimodal Hyperspectral Unmixing: Insights from Attention Networks". More specifically, it is detailed as follow.
+The code in this toolbox implements the "Multimodal Hyperspectral Unmixing: Insights from Attention Networks" in IEEE Transactions on Geoscience and Remote Sensing (TGRS). More specifically, it is detailed as follow.
 
 ![alt text](./MUNet.png)
 
@@ -46,7 +46,7 @@ Citation
 
 **Please kindly cite the papers if this code is useful and helpful for your research.**
 
-Zhu Han, Danfeng Hong, Lianru Gao, Jing Yao, Bing Zhang, Jocelyn Chanussot. Multimodal Hyperspectral Unmixing: Insights from Attention Networks, IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2022, DOI: 10.1109/TGRS.2022.3155794.
+Zhu Han, Danfeng Hong, Lianru Gao, Jing Yao, Bing Zhang, Jocelyn Chanussot. Multimodal Hyperspectral Unmixing: Insights from Attention Networks, IEEE Transactions on Geoscience and Remote Sensing, 2022, DOI: 10.1109/TGRS.2022.3155794.
 
     @article{han2022munet,
       title={Multimodal hyperspectral unmixing: insights from attention networks},
