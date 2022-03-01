@@ -4,4 +4,4 @@
 
 ___________
 
-This paper has been accepted by IEEE TGRS and the code will be available soon.
+The code in this toolbox implements the "Multimodal Hyperspectral Unmixing: Insights from Attention Networks". More specifically, it is detailed as follow.
