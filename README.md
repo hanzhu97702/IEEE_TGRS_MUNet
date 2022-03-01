@@ -26,6 +26,7 @@ Usage
 ### Training
     
 * `./main.py` is the script for training the multimodal unmixing network on two real multimodal datasets. Note that, different seed settings will affect the convergence of the loss function. You need to choose the suitable seed to ensure the convergence of the loss function according to the adopted computer equipment.
+    
     python main.py --fix_random --seed=10 --epoch=50 --dataset='muffle' --batch_size=128 --learning_rate_en=3e-4 --learning_rate_de=1e-4 --lamda=3e-2 --delta=1 --weight_decay=1e-5
     python main.py --fix_random --seed=5 --epoch=40 --dataset='houston170' --batch_size=256 --learning_rate_en=1e-4 --learning_rate_de=5e-4  --lamda=8e-2 --delta=0.5 --weight_decay=1e-5
 
