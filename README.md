@@ -6,8 +6,35 @@ ___________
 
 The code in this toolbox implements the "Multimodal Hyperspectral Unmixing: Insights from Attention Networks". More specifically, it is detailed as follow.
 
-![alt text](./MUNet.PNG)
+![alt text](./MUNet.png)
 
+
+    
+Usage
+---------------------
+### Dataset
+* **Muffle** was collected over the campus of Southern Mississippi-Gulfpark. The original image has 325 × 220 pixels and 64 bands in the spectral range from 0.375 to 1.050 μm. We select a popular region of interest (ROI) with a size of 130 × 90 pixels, and five dominated materials in this scene are investigated: #1 Roof, #2 Grass, #3 Tree, #4 Shadow and #5 Asphalt.
+
+<p align="center">
+<img src="./Muffle.png" alt="drawing" width="350"/>
+    
+* **Houston** was acquired by the ITRES CASI-1500 sensor over the University of Houston campus, TX, USA, in June 2012. This data set was originally released by the 2013 IEEE GRSS data fusion contest2, and it has been widely applied for evaluating the performance of land cover classification. The original image is 349 × 1905 pixels recorded in 144 bands ranging from 0.364 to 1.046 μm. We investigate a 170 × 170 pixel subimage cropped from the original image, and four endmembers in this scene are #1 Parking lot1, #2 Parking lot2, #3 Running track and #4 Grass healthy.
+
+<p align="center">
+<img src="./Houston.png" alt="drawing" width="350"/>
+
+### Training
+    
+* `./main.py` is the script for training the multimodal unmixing network on two real multimodal datasets. Note that, different seed settings will affect the convergence of the loss function. You need to choose the suitable seed to ensure the convergence of the loss function according to the adopted computer equipment.
+    python main.py --fix_random --seed=10 --epoch=50 --dataset='muffle' --batch_size=128 --learning_rate_en=3e-4 --learning_rate_de=1e-4 --lamda=3e-2 --delta=1 --weight_decay=1e-5
+    python main.py --fix_random --seed=5 --epoch=40 --dataset='houston170' --batch_size=256 --learning_rate_en=1e-4 --learning_rate_de=5e-4  --lamda=8e-2 --delta=0.5 --weight_decay=1e-5
+
+* If you want to run the code in your own data, you can accordingly change the input and tune the parameters, such as lamda, delta, and learning rate.
+    
+### Testing
+    
+After training the MUNet on the two created datasets, the extracted abundance and endmember results are saved as a MAT file. You can utilize `./result_display.m` to evaluate the unmixing performance.
+    
 Citation
 ---------------------
 
