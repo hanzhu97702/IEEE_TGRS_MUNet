@@ -4,7 +4,7 @@
 
 ___________
 
-The code in this toolbox implements the "Multimodal Hyperspectral Unmixing: Insights from Attention Networks" in IEEE Transactions on Geoscience and Remote Sensing (TGRS). More specifically, it is detailed as follow.
+The code in this toolbox implements the ["Multimodal Hyperspectral Unmixing: Insights from Attention Networks"](https://ieeexplore.ieee.org/document/9724217) in IEEE Transactions on Geoscience and Remote Sensing (TGRS). More specifically, it is detailed as follow.
 
 ![alt text](./MUNet.png)
 
