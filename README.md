@@ -23,6 +23,17 @@ Usage
 <p align="center">
 <img src="./Houston.png" alt="drawing" width="350"/>
 
+### Generate Attribute Profile
+The attribute profiles for LiDAR is applied based on the research work of [Dr. Liao](https://telin.ugent.be/~wliao/Partial_Reconstruction/). How to use the code can refer to this
+
+```bash
+num_scales = 2;
+
+MPNeach=getmorphprofiles(ldr_image,'euclidean','square',num_scales);    
+
+MPN=cat(3,MPNeach,ldr_image);
+```
+
 ### Training
     
 * `./main.py` is the script for training the multimodal unmixing network on two real multimodal datasets. Note that, different seed settings will affect the convergence of the loss function. You need to choose the suitable seed to ensure the convergence of the loss function according to the adopted computer equipment.
