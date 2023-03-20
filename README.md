@@ -57,13 +57,15 @@ Citation
 
 **Please kindly cite the papers if this code is useful and helpful for your research.**
 
-Zhu Han, Danfeng Hong, Lianru Gao, Jing Yao, Bing Zhang, Jocelyn Chanussot. Multimodal Hyperspectral Unmixing: Insights from Attention Networks, IEEE Transactions on Geoscience and Remote Sensing, 2022, DOI: 10.1109/TGRS.2022.3155794.
+Zhu Han, Danfeng Hong, Lianru Gao, Jing Yao, Bing Zhang, Jocelyn Chanussot. Multimodal Hyperspectral Unmixing: Insights from Attention Networks, IEEE Transactions on Geoscience and Remote Sensing, vol. 60, pp. 1-13, 2022, Art no. 5524913, doi: 10.1109/TGRS.2022.3155794.
 
     @article{han2022munet,
       title={Multimodal hyperspectral unmixing: insights from attention networks},
       author={Han, Zhu and Hong, Danfeng and Gao, Lianru and Yao, Jing and Zhang, Bing and Chanussot, Jocelyn},
       journal={IEEE Trans. Geosci. Remote Sens.},
       note = {DOI: 10.1109/TGRS.2022.3155794},
+      volume={60}, 
+      pages={1-13},
       year={2022}  
     }
     
