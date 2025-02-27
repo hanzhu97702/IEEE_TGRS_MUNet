@@ -13,7 +13,7 @@ The code in this toolbox implements the ["Multimodal Hyperspectral Unmixing: Ins
 Usage
 ---------------------
 ### Dataset
-* **Synthetic Multimodal Dataset** can be downloaded in [Baiduyun Link](https://pan.baidu.com/s/1CvXmTAviqv57CBKI7NXCTw?pwd=68wj), and the extracted code is 68wj. It contains 260 × 180 pixels and 345 bands ranging from 0.414 to 2.398 μm. Four different meterials are considered in this dataset.
+* **Synthetic Multimodal Dataset** can be downloaded in [Baiduyun Link](https://pan.baidu.com/s/1U-eyqebWu-rE3yVE2sHU9A?pwd=773n), and the extracted code is 773n. It contains 260 × 180 pixels and 345 bands ranging from 0.414 to 2.398 μm. Four different meterials are considered in this dataset.
 
 * **Muffle** was collected over the campus of Southern Mississippi-Gulfpark. The original image has 325 × 220 pixels and 64 bands in the spectral range from 0.375 to 1.050 μm. We select a popular region of interest (ROI) with a size of 130 × 90 pixels, and five dominated materials in this scene are investigated: #1 Roof, #2 Grass, #3 Tree, #4 Shadow and #5 Asphalt.
 
